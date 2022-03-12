@@ -29,6 +29,14 @@ namespace fans
       return false;
     }
   }
+  
+  public class FA3
+  {
+    public bool? Run(IEnumerable<char> s)
+    {
+      return false;
+    }
+  }
 
   class Program
   {
@@ -41,6 +49,9 @@ namespace fans
       FA2 fa2 = new FA2();
       bool? result2 = fa2.Run(s);
       Console.WriteLine(result2);
+      FA3 fa3 = new FA3();
+      bool? result3 = fa3.Run(s);
+      Console.WriteLine(result3);
     }
   }
 }
